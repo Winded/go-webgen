@@ -1,0 +1,1 @@
+alert("Greetings from static JS script");

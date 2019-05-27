@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>An example template</title>
+    </head>
+    <body>
+        <p>This is an example template</p>
+
+        <p>Here's a list of strings:</p>
+
+        <ul>
+        {{ range .List }}
+            <li>{{ . }}</li>
+        {{ end }}
+        </ul>
+
+        <p>A script will be loaded from {{ static "/script.js" }}</p>
+        <script src="{{ static "/script.js"}}"></script>
+    </body>
+</html>
